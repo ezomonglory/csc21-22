@@ -28,11 +28,11 @@ const YearbookCard = ({name, quote}) => {
 			</div>
 
 			<div className=' w-full  text-center mt-4 '>
-				<h1 className='text-[14px] leading:[22px] tracking-[-3%] md:text-[18px] md:leading-[28px] text-[#3C3C3C] neue-md truncate font-[700]'>
+				<h1 className='text-[14px] leading:[22px] tracking-[-3%] md:text-[18px] md:leading-[28px] text-[#7d7d7d] neue-md truncate font-[700]'>
 					{name}
 				</h1>
 
-				<p className='text-[12px] md:text-[16px] text-[#3C3C3C] font-[400] mx-auto w-[160px] line-clamp-3  '>
+				<p className='text-[12px] md:text-[16px] neue-md text-[#3C3C3C] font-[400] mx-auto w-[160px] line-clamp-3  '>
 					{" "}
 					{quote}
 				</p>
