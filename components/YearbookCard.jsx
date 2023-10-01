@@ -28,7 +28,7 @@ const YearbookCard = ({name, quote}) => {
 			</div>
 
 			<div className=' w-full  text-center mt-4 '>
-				<h1 className='text-[14px] leading:[22px] tracking-[0%] md:text-[18px] md:leading-[28px] text-[#7d7d7d] neue-md truncate font-[700]'>
+				<h1 className='text-[14px] leading:[22px] tracking-[0%] md:text-[18px] md:leading-[28px] text-[#7d7d7d] neue-md truncate font-[700] capitalize'>
 					{name}
 				</h1>
 
