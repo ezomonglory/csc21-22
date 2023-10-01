@@ -1,6 +1,10 @@
+import { useRouter } from 'next/navigation'
 import React from 'react'
 
 const HeroSecond = () => {
+
+    const router = useRouter()
+
   return (
     <div className='pt-[96px] md:pt-[192px] flex flex-col md:space-y-[32px] space-y-[16px] fade'>
         <div className='bg-black w-full  h-[4px]'></div>
@@ -14,9 +18,12 @@ const HeroSecond = () => {
 					There’s no next semester but if you have a reason to...					
 				</h1>
 
-				<div className=' cursor-pointer bg-white  text-black rounded-full py-[12px] px-[32px] inline-flex'>
+				<a href='https://www.uniben.edu/' target='_blank' >
+                <div className=' cursor-pointer bg-white  text-black rounded-full py-[12px] px-[32px] inline-flex'            
+                >
 					<h1 className=' md:text-[20px]  font-[400] neue-md'>Click me</h1>
 				</div>
+                </a>
 			</div>
     </div>
   )

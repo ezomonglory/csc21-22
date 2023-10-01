@@ -27,10 +27,13 @@ const HeroMain = () => {
 					& bidding our farewells.
 				</motion.p>
 
-                <div className=" cursor-pointer bg-[#141414] items-center space-x-2 text-white rounded-full py-[16px] px-[32px] inline-flex fade">
+               <a href="https://drive.google.com/file/d/1AdkS0xOhvenGc9mXhfpMNqUGSWNIqmse/view?usp=sharing" target="_blank" >
+               <div className=" cursor-pointer bg-[#141414] items-center space-x-2 text-white rounded-full py-[16px] px-[32px] inline-flex fade"                
+                >
                     <h1 className="text-[16px] md:text-[20px] font-[500] neue-md">Watch our reels</h1>
                     <Image src="/images/play-circle-white.svg" width={24} height={24} alt="play" />
                 </div>
+               </a>
 			</div>
 		</div>
 	);
