@@ -18,7 +18,7 @@ const HeroSecond = () => {
 					There’s no next semester but if you have a reason to...					
 				</h1>
 
-				<a href='https://www.uniben.edu/' target='_blank' >
+				<a href='https://waeup.uniben.edu/login' target='_blank' >
                 <div className=' cursor-pointer bg-white  text-black rounded-full py-[12px] px-[32px] inline-flex'            
                 >
 					<h1 className=' md:text-[20px]  font-[400] neue-md'>Click me</h1>

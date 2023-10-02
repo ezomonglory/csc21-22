@@ -13,7 +13,7 @@ const CreditCard = ({ data, index }) => {
 			className='mt-[32px] md:mt-[40px] animate'
 		>
 			<div
-				className={`rounded-md   bg-[#D9D9D9] h-[180px] w-[180px] md:mb-[16px] mb-[12px] `}
+				className={`rounded-md   bg-[#D9D9D9] h-[180px] w-[180px] md:mb-[12px] mb-[12px] `}
                 style={{
                     backgroundImage:`url('/images/${data.image}.jpg')`,
                     backgroundPosition:"center",

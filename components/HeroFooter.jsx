@@ -7,20 +7,20 @@ import { HeroImage } from "../data";
 const HeroFooter = () => {        
  const [hover, setHover] = useState(false)
 
-	// const addImage = () => {
-    //     document.querySelector("#imageContainer").insertAdjacentHTML("beforeend", "<div> {HeroImage.map((image, i)=> <HeroCard image={image} key={i} ) } </div>")
-    // }
+	const addImage = () => {
+        document.querySelector("#imageContainer").insertAdjacentHTML("beforeend", "<div> {HeroImage.map((image, i)=> <HeroCard image={image} key={i} ) } </div>")
+    }
 
-	// useEffect(() => {
-	// 	console.log("hi");
+	useEffect(() => {
+		console.log("hi");
 
-	// 	const interVal = setInterval(() => {
-	// 		console.log("here");
-	// 		addImage();
-	// 	}, 1000);
+		const interVal = setInterval(() => {
+			console.log("here");
+			addImage();
+		}, 1000);
 
-	// 	return () => clearInterval(interVal);
-	// }, []);
+		return () => clearInterval(interVal);
+	}, []);
 
 
 	return (

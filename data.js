@@ -292,10 +292,7 @@ export const yearbook = [
         "Full Name": "Douglas Idumwonyi",
         "Yearbook Quote": "..."
     },
-    {
-        "Full Name": "E.G",
-        "Yearbook Quote": "EG loves you"
-    },
+   
     {
         "Timestamp": "6\/8\/2023 19:37:29",
         "Full Name": "Ebhohon Osemudiamen Gift ",
@@ -380,6 +377,10 @@ export const yearbook = [
         "Timestamp": "6\/9\/2023 12:28:07",
         "Full Name": "Etinosa chuka Omogiate",
         "Yearbook Quote": "“Knock Knock” “Who’s there?” “I’m” “I’m Who?” “I’m Out!”"
+    },
+    {
+        "Full Name": "Ezomon Glory",
+        "Yearbook Quote": "EG loves you"
     },
     {
         "Full Name": "Faith Ododoh",
@@ -615,11 +616,7 @@ export const yearbook = [
         "Full Name": "Noel Nwanze",
         "Yearbook Quote": "..."
     },
-    {
-        "Timestamp": "6\/6\/2023 10:32:16",
-        "Full Name": "Noroghene Onothoja",
-        "Yearbook Quote": "You have got a million potentials in you "
-    },
+    
     {
         "Timestamp": "6\/7\/2023 21:28:22",
         "Full Name": "Nwadulu Elijah Ikechukwu",
@@ -809,7 +806,7 @@ export const yearbook = [
     },
     {
         "Full Name": "Onothoja Noraoghene",
-        "Yearbook Quote": "..."
+        "Yearbook Quote": "You have got a million potentials in you"
     },
     {
         "Timestamp": "6\/8\/2023 18:09:24",
@@ -1011,7 +1008,7 @@ export const yearbook = [
     }
 ];
 
-export const creditData = [
+export const    creditData = [
     {
         name: "Daniel Kainebi  “Kainty.graphs”",
         role: "Photographer",
@@ -1020,7 +1017,7 @@ export const creditData = [
     {
         name: "Ezomon Glory “EG”",
         role: "Developer",
-        image: "/kainty"
+        image: "/EG"
     },
     {
         name: "David Otu “Busybee”",
