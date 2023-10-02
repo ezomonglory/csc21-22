@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { HeroImage } from "../data";
+import { GalleryImage } from "../data";
 import HeroCard from "./HeroCard";
 import Audio from "./Audio";
 import GridOverlay from "./GridOverlay";
@@ -12,7 +12,9 @@ import { motion } from "framer-motion";
 
 const GalleryGrid = () => {
 	const [open, setOpen] = useState(false);
-	const [play, setPlay] = useState(false);
+    const [image, setImage] = useState()
+	   
+    
 	return (
 	  <div className="h-[80vh] overflow-y-scroll scroll-hidden ">
 	      <div
@@ -22,7 +24,7 @@ const GalleryGrid = () => {
 	         initial={{y:"10px"}}
 	         whileInView={{y:"0px"}}
 	         viewport={{once:true}}
-	        className='redact md:tracking-[-2.8px] topanimate opa tracking-[-1.6px] text-[32px]  md:text-[52px] font-[400] md:mb-[2px] p-0 md:leading-[67px]'>
+	        className='redact md:tracking-[-2.8px] topanimate opa tracking-[-1.6px] text-[32px]  md:text-[52px] font-[400] md:mb-[2px] p-0 md:leading-[63px]'>
 				Nostalgia
 			</motion.h1>
 			<motion.p
@@ -36,18 +38,19 @@ const GalleryGrid = () => {
 		</div>
 
 		<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4  gap-[16px]  justify-between mx-auto mb-4  '>
-			{HeroImage.map((i) => (
+			{GalleryImage.map((i) => (
 				<div
 					key={i}
 					onClick={() => {
+                        setImage(`url('/images/Yearbook Pictures/${i}.JPG')`)
 						setOpen(true);
 					}}
 				>
-					<GridCard />
+					<GridCard  setImage={setImage} index={i} />
 				</div>
 			))}
 
-			{open && <GridOverlay setOpen={setOpen} open={open} />}
+			{open && <GridOverlay setOpen={setOpen} open={open}  image={image} />}
 		</div>
 
 	  </div>

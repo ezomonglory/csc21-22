@@ -8,12 +8,13 @@ const HeroCard = ({ image }) => {
 		<div className='cursor-pointer mt-[32px]'>
 			<div
 				className={`rounded-md  w-[158px] h-[190px] md:h-[240px] md:w-[200px] bg-[#d9d9d9]`}
-				style={{
-					backgroundImage: `url("${image.image}")`,
-					backgroundRepeat: "no-repeat",
-					backgroundPosition: "cover",
-					backgroundSize: "cover",
-				}}
+                style={{
+                    backgroundImage:`url('/images/Yearbook Pictures/${image}.JPG')`,
+                    backgroundPosition:"cover",
+                    backgroundSize:"cover",
+                    loading:"lazy"
+                    
+                }}
 			>
 				{" "}
 			</div>

@@ -1,7 +1,8 @@
 import Image from "next/image";
 import React from "react";
 
-const GridOverlay = ({ src, open, setOpen }) => {
+const GridOverlay = ({ src, open, setOpen, image }) => {
+    console.log(image)
 	src = false;
 	return (
 		<div className='bg-[#000000E5]  fixed top-0 right-0 h-screen w-screen px-[16px] md:px-[72px] flex justify-center items-center'>
@@ -25,7 +26,16 @@ const GridOverlay = ({ src, open, setOpen }) => {
 				{src ? (
 					<Image src={src} width={56} height={56} alt='leftarr' />
 				) : (
-					<div className='rounded-md  bg-[#D9D9D9] md:h-[610px] md:w-[584px] w-[343px] h-[418px] '>
+					<div className='rounded-md  bg-[#D9D9D9] md:h-[550px] md:w-[700px] w-[343px] h-[418px] '
+                    style={{
+                        backgroundImage:image,
+                        backgroundPosition:"cover",
+                        backgroundSize:"cover",
+                        backgroundRepeat:"no-repeat",
+                        loading:"lazy"
+                        
+                    }}
+                    >
 						{" "}
 					</div>
 				)}

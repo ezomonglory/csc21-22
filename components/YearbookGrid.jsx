@@ -16,7 +16,7 @@ const YearbookGrid = () => {
 					initial={{ y: "10px" }}
 					whileInView={{ y: "0px" }}
 					viewport={{ once: true }}
-					className='redact md:tracking-[-2.8px] topanimate opa tracking-[-1.6px] text-[32px]  md:text-[52px] font-[400] md:mb-[2px] p-0 md:leading-[67px]'
+					className='redact md:tracking-[-2.8px] topanimate opa tracking-[-1.6px] text-[32px]  md:text-[52px] font-[400] md:mb-[0px] p-0 md:leading-[63px]'
 				>
 					Yearbook
 				</motion.h1>

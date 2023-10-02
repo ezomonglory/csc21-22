@@ -2,6 +2,7 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 const HeroHeader = () => {
 	const [open, setOpen] = useState(false);
@@ -10,11 +11,17 @@ const HeroHeader = () => {
         console.log(document.querySelector("#menu"))
     })
 
+    const router = useRouter()
+
 
 	return (
 		<div      
         className='flex  justify-between items-center pt-[32px] pb-[24px] md:pb-0 md:py-[30px] px-[20px] md:px-[72px] headerAnimate'>
-			<div>
+			<div
+            onClick={()=> {
+                router.push("/")
+            }}
+            >
 				<Image
 					src='/images/clogo.svg'
 					width={56}

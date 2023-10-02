@@ -32,7 +32,7 @@ const YearbookCard = ({name, quote}) => {
 					{name}
 				</h1>
 
-				<p className='text-[12px] md:text-[16px] neue-md text-[#3C3C3C] font-[400] mx-auto w-[160px] line-clamp-3 mdLkeading-[19px] '>
+				<p className='text-[12px] md:text-[14px] neue-md text-[#3C3C3C] font-[400] mx-auto w-[160px] line-clamp-3 md:leading-[18px] '>
 					{" "}
 					{quote}
 				</p>
