@@ -28,10 +28,8 @@ const HeroFooter = () => {
             <div className="bg-white absolute right-[10000px] h-[280px] w-full z-[50] cardAnimation ">
             </div>		
 			<marquee
-            onMouseEnter={()=> { setHover(true); console.log(hover);}}
-            onMouseOut={()=> setHover(true)}
-            scrollamount={`${hover ? "0" : 1}`}
-            >
+            scrollAmount={1}                   
+            >                
             <div className={` h-full animate flex space-x-2 scroll-hidden relative w-full translate-x-[-1000px]`} id="imageContainer">
 				{GalleryImage.map((image,i) => (
 					<HeroCard key={i} image={i}  />

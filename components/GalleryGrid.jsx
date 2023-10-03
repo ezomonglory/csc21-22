@@ -13,7 +13,28 @@ import { motion } from "framer-motion";
 const GalleryGrid = () => {
 	const [open, setOpen] = useState(false);
     const [image, setImage] = useState()
+    const [index, setIndex] = useState()
 	   
+    const nextImage = () => {
+        if(index !== GalleryImage.length ){
+            const newindex = index + 1
+            setIndex(newindex)
+            setImage(`url('/images/Yearbook Pictures/${newindex}.JPG')`)
+        }
+
+    }
+
+    const prevImage = () => {
+        if(index !== 0){
+            const newindex = index - 1
+            setIndex(newindex)
+            setImage(`url('/images/Yearbook Pictures/${newindex}.JPG')`)
+        }
+
+    }
+    
+
+
     
 	return (
 	  <div className="h-[80vh] overflow-y-scroll scroll-hidden ">
@@ -43,6 +64,7 @@ const GalleryGrid = () => {
 					key={i}
 					onClick={() => {
                         setImage(`url('/images/Yearbook Pictures/${i}.JPG')`)
+                        setIndex(i)
 						setOpen(true);
 					}}
 				>
@@ -50,7 +72,7 @@ const GalleryGrid = () => {
 				</div>
 			))}
 
-			{open && <GridOverlay setOpen={setOpen} open={open}  image={image} />}
+			{open && <GridOverlay setOpen={setOpen} open={open} nextImage={nextImage} prevImage={prevImage}  image={image} />}
 		</div>
 
 	  </div>
