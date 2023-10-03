@@ -32,26 +32,26 @@ const GridOverlay = ({ src, open, setOpen, image, nextImage, prevImage }) => {
   };
   
  
-  const handleTouch = ((e)=> {
-     // Add touch event listeners to the gallery container
+//   const handleTouch = ((e)=> {
+//      // Add touch event listeners to the gallery container
   
-     const galleryContainer = galleryRef.current
+//      const galleryContainer = galleryRef.current
 
-     if (galleryContainer) {
-       galleryContainer.addEventListener('touchstart', handleTouchStart);
-       galleryContainer.addEventListener('touchend', handleTouchEnd);
+//      if (galleryContainer) {
+//        galleryContainer.addEventListener('touchstart', handleTouchStart);
+//        galleryContainer.addEventListener('touchend', handleTouchEnd);
  
        
-     }
+//      }
  
-     // Clean up event listeners when the component unmounts
-     return () => {
-       if (galleryContainer) {
-         galleryContainer.removeEventListener('touchstart', handleTouchStart);
-         galleryContainer.removeEventListener('touchend', handleTouchEnd);
-       }
-     };  
-  })
+//      // Clean up event listeners when the component unmounts
+//      return () => {
+//        if (galleryContainer) {
+//          galleryContainer.removeEventListener('touchstart', handleTouchStart);
+//          galleryContainer.removeEventListener('touchend', handleTouchEnd);
+//        }
+//      };  
+//   })
 
 
 
@@ -60,8 +60,11 @@ const GridOverlay = ({ src, open, setOpen, image, nextImage, prevImage }) => {
 	src = false;
 	return (
 		<div className='bg-[#000000E5]  fixed top-0 right-0 h-screen w-screen px-[16px] md:px-[72px] flex justify-center items-center' ref={galleryRef}
-        onTouchMove={()=>{
-            handleTouch(e)
+        onTouchStart={(e)=>{
+            handleTouchStart(e)
+        }}
+        onTouchEnd={(e)=> {
+            handleTouchEnd(e)
         }}
         >
 			<div className='absolute top-[40px] right-[16px] text-white cursor-pointer'>

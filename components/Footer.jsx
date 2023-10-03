@@ -8,16 +8,26 @@ const Footer = () => {
 		setDate(new Date());
 	};
 
+    let mins;
 	useEffect(() => {
 		setInterval(() => {
 			getDate();
 		}, 6000);
 	}, [date]);
 
+    const getMinutes = (date) => {
+         const min = date.getMinutes();
+         if(min.toString().length === 1) {
+            return `0${min}`
+         }else{
+            return min
+         }     
+    }
+
 	return (
 		<div className='flex flex-col md:flex-row gap-y-[16px] md:space-y-0 justify-between border-transparent border-t-[#B4B4B4] border-[0.5px] pt-[16px] md:pt-[32px] mb-[2rem] '>
 			<p className='text-[14px] text-[#3C3C3C] order-1'>
-				{date?.getHours()}:{date?.getMinutes()}{" "}
+				{date?.getHours()}:{getMinutes(date)}{" "}
 				<span className='text-[14px] text-[#7D7D7D] mt-4 ml-[8px]'>
 					Ugbowo, Benin city
 				</span>
