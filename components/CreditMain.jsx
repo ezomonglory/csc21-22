@@ -37,7 +37,7 @@ const CreditMain = () => {
 				{creditData.map((data, i) => {
 					if (i === 0) {
 						return (
-							<div key={i} className='flex justify-start mb-[72px]'>
+							<div key={i} className='flex justify-start mb-[64px]'>
 								{" "}
 								<CreditCard key={i} index={i} data={data} />{" "}
 							</div>
@@ -48,7 +48,7 @@ const CreditMain = () => {
 				{creditData.map((data, i) => {
 					if (i === 1) {
 						return (
-							<div key={i} className='flex justify-end mb-[72px]'>
+							<div key={i} className='flex justify-end mb-[64px]'>
 								{" "}
 								<CreditCard key={i} index={i} data={data} />{" "}
 							</div>
@@ -59,7 +59,7 @@ const CreditMain = () => {
 				{creditData.map((data, i) => {
 					if (i === 2) {
 						return (
-							<div key={i} className='flex justify-start mb-[72px]'>
+							<div key={i} className='flex justify-start mb-[64px]'>
 								{" "}
 								<CreditCard key={i} index={i} data={data} />{" "}
 							</div>
@@ -70,7 +70,7 @@ const CreditMain = () => {
 				{creditData.map((data, i) => {
 					if (i === 3) {
 						return (
-							<div key={i} className='flex justify-end mb-[72px]'>
+							<div key={i} className='flex justify-end mb-[64px]'>
 								{" "}
 								<CreditCard key={i} index={i} data={data} />{" "}
 							</div>
@@ -81,7 +81,7 @@ const CreditMain = () => {
 				{creditData.map((data, i) => {
 					if (i === 4) {
 						return (
-							<div key={i} className='flex justify-start mb-[72px] '>
+							<div key={i} className='flex justify-start mb-[64px] '>
 								{" "}
 								<CreditCard key={i} index={i} data={data} />{" "}
 							</div>

@@ -923,7 +923,7 @@ export const yearbook = [
 	},
 	{
 		"Full Name": "Otu David",
-		"Yearbook Quote": "I look better on the credit section.",
+		"Yearbook Quote": "Life's too short not to fill it with laughter!",
 	},
 	{
 		Timestamp: "7/27/2023 18:19:08",

@@ -30,7 +30,7 @@ const HeroFooter = () => {
 			<marquee
             scrollAmount={1}                   
             >                
-            <div className={` h-full animate flex space-x-2 scroll-hidden relative w-full translate-x-[-1000px]`} id="imageContainer">
+            <div className={` h-full animate flex space-x-2 scroll-hidden relative w-full translate-x-[-100px] md:translate-x-[-1000px]`} id="imageContainer">
 				{GalleryImage.map((image,i) => (
 					<HeroCard key={i} image={i}  />
 				))}               
